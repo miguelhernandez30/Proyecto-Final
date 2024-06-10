@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso y Egreso</title>
+    <link rel="stylesheet" href="../css/ingresoyegreso.css">
+    <link rel="icon" href="../recursos/Icon Acme.jpeg">
+</head>
+
+<body>
+    <header>
+        <div class="divLeft">
+            <img src="../recursos/Icon Acme.jpeg" alt="ooee" height="70px" width="70px">
+            <a href="menuclientec.html">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Servicios</a>
+        </div>
+        <div class="divRight">
+        </div>
+    </header>
+
+    <h1>Ingresos y Egreso</h1>
+    <h3>A continuación sus Ingresos y Egreso</h3>
+
+    <table class="tableGestion">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Tipo (Ingreso o Egreso)</th>
+                <th>Categoría</th>
+                <th>Nombre del Tipo</th>
+                <th>Descripción</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody id="temas-list">
+        </tbody>
+    </table>
+
+    <div>
+        <button id="guardarCambios">Guardar Cambios</button>
+        <button id="agregarCuenta">Agregar un Ingreso o Egreso</button>
+    </div>
+
+    <div id="modalAgregarCuenta" class="modal">
+        <div class="modal-content">
+            <form id="formAgregarCuenta">
+                <div class="divContainer">
+                    <h1>Agrega un Ingreso o Egreso</h1>
+                    <div class="gridPart1">
+                        Código:
+                        <input type="password" id="codigo" name="codigo" required>
+                        Tipo (Ingreso o Egreso):
+                        <select id="tipo" name="tipo" required>
+                            <option value="Ingreso">Ingreso</option>
+                            <option value="Egreso">Egreso</option>
+                        </select>
+                        Categoría:
+                        <input type="text" id="categoria" name="categoria" required>
+                        Nombre del Tipo:
+                        <input type="text" id="nombreTipo" name="nombreTipo" required>
+                        Descripción:
+                        <textarea id="descripcion" name="descripcion" rows="6"></textarea>
+                        <button type="submit">Guardar</button>
+                        <button type="button" class="close">Cerrar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../js/ingresoYEgreso.js"></script>
+</body>
+</html>

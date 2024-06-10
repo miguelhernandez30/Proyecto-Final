@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea una Accion</title>
+    <link rel="stylesheet" href="../css/gestordeacciones.css">
+    <link rel="icon" href="../recursos/Icon Acme.jpeg">
+</head>
+
+<body>
+    <header>
+        <div class="divLeft">
+            <img src="../recursos/Icon Acme.jpeg" alt="ooee" height="70px" width="70px">
+            <a href="menuclientec.html">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Servicios</a>
+        </div>
+        <div class="divRight">
+            <p>Bienvenido, [Nombre]</p>
+        </div>
+    </header>
+    
+    <div class="divContainer">
+        
+        <div class="grid2">
+            <h1>Gestor de Acciones</h1>
+            <div class="actions" id="actions">
+            </div>
+        </div>
+
+        <div class="grid3">
+            <div id="modalAgregarCuenta" class="modal">
+                <div class="modal-content">
+                    <form id="formAgregarCuenta">
+                        <label for="tipo">Tipo (Ingreso o Egreso):</label>
+                        <select name="tipoaccion" id="tipo" required>
+                            <option value="ingreso">Ingreso</option>
+                            <option value="egreso">Egreso</option>
+                        </select>
+            
+                        <label for="nombredeAccion">Nombre de la Acción:</label>
+                        <input type="text" id="nombredeAccion" required>
+            
+                        <label for="fechadeAccion">Fecha:</label>
+                        <input type="date" id="fechadeAccion" required>
+            
+                        <label for="valor">Valor:</label>
+                        <input type="number" id="valor" required>
+            
+                        <button type="submit">Añadir Acción</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <a href="menuclientec.html"><button class="back">Regresar</button></a>
+
+    </div>
+    <footer>
+        <div class="footerD">
+            <img src="../recursos/Icon Acme.jpeg" alt="logo" height="70px" width="70px" style="margin-top: 20px;">
+        </div>
+        <nav class="nav">
+            <a href="menuclientec.html">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Servicios</a>
+        </nav>
+        <div class="icons">
+            <a href="http://facebook.com/">
+                <img src="../recursos/facebook icon.jpg" alt="faceboob">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="../recursos/instagram icon.jpg" alt="instagram">
+            </a>
+            <a href="https://co.linkedin.com/">
+                <img src="../recursos/in icon.jpg" alt="likend">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="../recursos/youtube icon.jpg" alt="youtube">
+            </a>
+        </div>
+
+        <div class="footerPiso">
+            <p>Copyright 2024 Acme. All rights reserved.</p>
+            <nav class="nav">
+                <a href="">Teams & Conditions</a>
+                <a href="">Privacy Policy</a>
+            </nav>
+        </div>
+    </footer>
+    
+    <script src="../js/gestordeacciones.js"></script>
+
+</body>
+
+</html>

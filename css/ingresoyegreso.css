@@ -1,0 +1,156 @@
+body, html {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1F4E79;
+    height: 80px;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.divLeft, .divRight {
+    display: flex;
+    align-items: center;
+}
+
+.divLeft img {
+    margin-right: 20px;
+}
+
+.divLeft a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.divLeft a:hover {
+    color: #FFD700;
+}
+
+h1, h3 {
+    text-align: center;
+    margin: 20px 0;
+    color: black;
+}
+
+.tableGestion {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tableGestion th, .tableGestion td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.tableGestion th {
+    background-color: #5DADE2;
+    color: white;
+}
+
+.tableGestion tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tableGestion tr:hover {
+    background-color: #ddd;
+}
+
+button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #1F4E79;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #3c6eaf;
+    transform: scale(1.05);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 30px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal h1 {
+    text-align: center;
+    color: #1F4E79;
+}
+
+.divContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.modal input, .modal select, .modal textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.modal button {
+    width: calc(50% - 10px);
+    align-self: center;
+    margin: 0 5px;
+}
+
+.close {
+    background-color: #f44336;
+}
+
+.close:hover {
+    background-color: #d32f2f;
+}
+
+.modal button[type="submit"] {
+    background-color: #4CAF50;
+}
+
+.modal button[type="submit"]:hover {
+    background-color: #45a049;
+}

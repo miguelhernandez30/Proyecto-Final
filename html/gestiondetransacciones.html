@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Transacciones</title>
+    <link rel="stylesheet" href="../css/gestiondetransacciones.css">
+    <link rel="icon" href="../recursos/Icon Acme.jpeg">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <header>
+            <div class="divLeft">
+                <img src="../recursos/Icon Acme.jpeg" alt="ooee" height="70px" width="70px">
+                <a href="menuclientec.html">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Servicios</a>
+            </div>
+            <div class="divRight">
+                <p>Bienvenido, [Nombre]</p>
+            </div>
+        </header>
+
+        <main>
+            <center>
+            <h1>Gestión de Transacciones</h1>
+            <h3>Tus Transacciones </h3>
+        </center>
+
+            <table class="tableGestion">
+                <thead>
+                    <tr>
+                        <th>Tipo de Transacción</th>
+                        <th>Ingreso/Egreso</th>
+                        <th>Valor</th>
+                        <th>Cuenta Bancaria</th>
+                        <th>Fecha</th>
+                        <th>Descripción</th>
+                        <th>Adjunto</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="transacciones-list">
+
+                </tbody>
+            </table>
+
+            <div>
+                <a href="menuclientec.html"><button id="guardarCambios" class="guardar">Regresar</button></a>
+                <button id="agregarTransaccion" class="agregar">Agregar Transacción</button>
+            </div>
+        </main>
+
+        <div id="modalAgregarTransaccion" class="modal">
+            <div class="modal-content">
+                <form id="formAgregarTransaccion">
+                    <div class="divContainer">
+                        <div class="gridPart1">
+                            Tipo de Transacción:
+                            <select id="tipoTransaccion" name="tipoTransaccion" required>
+                                <option value="pago">Pago</option>
+                                <option value="transferencia">Transferencia</option>
+                                <option value="retiro">Retiro</option>
+                                <option value="deposito">Depósito</option>
+                            </select>
+
+                            Ingreso/Egreso:
+                            <select id="tipoIngresoEgreso" name="tipoIngresoEgreso" required>
+                                <option value="ingreso">Ingreso</option>
+                                <option value="egreso">Egreso</option>
+                            </select>
+
+                            Valor:
+                            <input type="number" id="valor" name="valor" required>
+
+                            Cuenta Bancaria:
+                            <select id="cuentaBancaria" name="cuentaBancaria" required>
+                            </select>
+                            <button type="submit">Guardar</button>
+
+                
+                        </div>
+
+                        <div class="gridPart2">
+                            Fecha:
+                            <input type="date" id="fechaTransaccion" name="fechaTransaccion" required>
+
+                            Descripción:
+                            <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+                            Adjunto:
+                            <input type="file" id="adjunto" name="adjunto">
+                            <button type="button" class="close">Cerrar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerD">
+            <img src="../recursos/Icon Acme.jpeg" alt="logo" height="70px" width="70px" style="margin-top: 20px;">
+        </div>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Servicios</a>
+        </nav>
+        <div class="icons">
+            <a href="http://facebook.com/">
+                <img src="../recursos/facebook icon.jpg" alt="facebook">
+            </a>
+            <a href="">
+                <img src="../recursos/instagram icon.jpg" alt="instagram">
+            </a>
+            <a href="">
+                <img src="../recursos/in icon.jpg" alt="linkedin">
+            </a>
+            <a href="">
+                <img src="../recursos/youtube icon.jpg" alt="youtube">
+            </a>
+        </div>
+        <div class="footerPiso">
+            <p>Copyright 2024 Acme. All rights reserved.</p>
+            <nav>
+                <a href="">Terms & Conditions</a>
+                <a href="">Privacy Policy</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../js/gestiondetransacciones.js"></script>
+</body>
+
+</html>

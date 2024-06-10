@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Alertas</title>
+    <link rel="stylesheet" href="../css/estilosalertas.css">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <header>
+            <div class="divLeft">
+                <img src="../recursos/Icon Acme.jpeg" alt="ooee" height="70px" width="70px">
+                <a href="menuclientec.html">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Servicios</a>
+            </div>
+            <div class="divRight">
+            </div>
+        </header>
+
+        <center>
+        <h1>Gestor de Alertas</h1>
+        <h2>Tus Alertas</h2>
+    </center>
+
+        <div class="divContainerPrincipal">
+        
+            <div class="divMedio">
+                <table class="tableGestion">
+                    <thead>
+                        <tr>
+                            <th>Tipo de Alerta</th>
+                            <th>Descripcion de Alerta</th>
+                            <th>Fecha y Hora</th>
+                            <th>Repeticion</th>
+                            <th>Accion</th>
+                        </tr>
+                    </thead>
+                    <tbody id="temas-list">
+                    </tbody>
+                </table>
+            </div>
+            <a href="menuclientec.html"><button onclick="guardarCambios()" class="guardar-cambios" >Regresar</button></a>
+            <button id="agregarCuenta" class="crear-alertas" >Crear Alerta</button>
+            <div id="modalAgregarCuenta" class="modal">
+                <div class="modal-content">
+                    <form id="formAgregarCuenta">
+                        <div class="divContainer">
+                            <div class="gridPart1">
+                                Tipo de Alerta (Ejemplo: Pagar, Compra, Etc... )
+                                <input type="text" id="tipoAlerta">
+                                Descripcion de Alerta:
+                                <input type="text" id="descripcionA" name="codigo" required>
+                                Fecha y Hora:
+                                <input type="datetime-local" id="fechaYHora">
+                                Repeticion:
+                                <select name="repeticion" id="repeticionA">
+                                    <option value="Semanal">Semanal</option>
+                                    <option value="Mensual">Mensual</option>
+                                    <option value="Diario">Diario</option>
+                                </select>
+                                <button type="submit">Guardar</button>
+                                <button type="button" class="close">Cerrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerD">
+        </div>
+        <div class="footerD">
+            <img src="../recursos/Icon Acme.jpeg" alt="logo" height="70px" width="70px" style="margin-top: 20px;">
+        </div>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Servicios</a>
+        </nav>
+        <div class="icons">
+            <a href="http://facebook.com/">
+                <img src="../recursos/facebook icon.jpg" alt="faceboob">
+            </a>
+            <a href="">
+                <img src="../recursos/instagram icon.jpg" alt="instagram">
+            </a>
+            <a href="">
+                <img src="../recursos/in icon.jpg" alt="likend">
+            </a>
+            <a href="">
+                <img src="../recursos/youtube icon.jpg" alt="youtube">
+            </a>
+        </div>
+        <div class="footerPiso">
+            <p>Copyright 2024 Acme. All rights reserved.</p>
+            <nav>
+                <a href="">Teams & Conditions</a>
+                <a href="">Privacy Policy</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../js/alertas.js"></script>
+</body>
+</html>

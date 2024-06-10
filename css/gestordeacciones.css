@@ -1,0 +1,202 @@
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #FFD700;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1F4E79;
+    height: 80px;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.divLeft {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.divLeft a {
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.divRight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.divContainer {
+    display: grid;
+    grid-template-columns: 8% auto auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid1 {
+    grid-column: 1 / 2;
+}
+
+.grid2 {
+    grid-column: 2 / 3;
+}
+
+.grid3 {
+    grid-column: 3 / 4;
+}
+
+.actions {
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    width: 250px;
+    height: 400px;
+    gap: 20px;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.action-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 10px;
+}
+
+.action-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.action-card h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #1F4E79;
+}
+
+.action-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.modal {
+    border: 1px solid #ccc;
+    width: 90%;
+    max-width: 400px;
+    padding-top: 30px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal input,
+.modal select,
+.modal textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 5%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.modal label {
+    margin-left: 5%;
+    font-size: 14px;
+    color: #333;
+}
+
+.modal button {
+    background-color: #3399ff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 5%;
+    width: 90%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.modal button:hover {
+    background-color: #005b99;
+    transform: scale(1.02);
+}
+
+
+.footerD {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.icons img {
+    height: 50px;
+    width: 50px;
+}
+
+footer {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+}
+
+.footerPiso {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: end;
+}
+
+.footerPiso p {
+    margin: 0;
+}
+
+.back{
+    background-color: #005b99;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-left: 120%;
+}
